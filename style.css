@@ -1,7 +1,25 @@
+#sidebar {
+  position: fixed;
+  width: 200px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  line-height: 30px;
+}
+
+#sidebar ul a {
+  list-style-type: none;
+  color: white;
+}
+
+
 body {
   font-family: 'Varela Round', sans-serif;
   line-height: 10px;
-  background-color: #EEEEEE;
+  /*background-color: #EEEEEE;*/
+  background-image: url("images/sawyer-bengtson.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #img-circle {
@@ -126,9 +144,15 @@ a:hover {
 }
 
 .footer {
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px;
   font-size: 15px;
   line-height: 15px;
   text-align: left;
+  color: #7F7F7F;
+}
+
+.footer a {
   color: #7F7F7F;
 }
 

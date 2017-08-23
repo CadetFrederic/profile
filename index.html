@@ -3,57 +3,66 @@
     <meta charset="utf-8">
     <title>My Profile Page</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700|Varela+Round" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <script src="https://use.fontawesome.com/c60df86c96.js"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div class="container">
-          <div class="card">
-              <img src="images/image_profile.jpg" alt="image profile" id="img-circle">
-              <h1>Frédéric Cadet</h1>
-              <h2>Student at Le Wagon</h2>
-              <p id="resume">I'm just finishing my studies in finance, I worked 3 years in Supply Chain and Private Equity and then I would like to launch my own start-up after Le Wagon !</p>
-              <button type="button" id="button-check">Check me out!</button>
-          </div>
+      <div id="sidebar">
+          <ul>
+            <li><a href="#summary"><i class="fa fa-user-circle" aria-hidden="true"></i> Infos</a></li>
+            <li><a href="#social"><i class="fa fa-at" aria-hidden="true"></i> Social Links</a></li>
+            <li><a href="#favorite-movies"><i class="fa fa-film" aria-hidden="true"></i> Movies</a></li>
+          </ul>
+      </div>
+      <div class="page-content">
+          <div class="container">
+              <div class="card" id=summary>
+                  <img src="images/image_profile.jpg" alt="image profile" id="img-circle">
+                  <h1>Frédéric Cadet</h1>
+                  <h2>Student at Le Wagon</h2>
+                  <p id="resume">I'm just finishing my studies in finance, I worked 3 years in Supply Chain and Private Equity and then I would like to launch my own start-up after Le Wagon !</p>
+                  <button type="button" id="button-check">Check me out!</button>
+              </div>
 
-          <div class="card">
-              <ul class="list-inline">
-                <li><a href="https://www.facebook.com/frederic.cadet"><i class="fa fa-facebook logo-social" aria-hidden="true" ></i><br>Facebook</a></li>
-                <li><a href="https://fr.linkedin.com/in/frédéric-cadet-93524668"><i class="fa fa-linkedin logo-social" aria-hidden="true"></i><br>LinkedIn</a></li>
-                <li><a href="https://www.instagram.com/fred.cdt/"><i class="fa fa-instagram logo-social" aria-hidden="true"></i><br>Instagram</a></li>
-              </ul>
-          </div>
+              <div class="card" id="social">
+                  <ul class="list-inline">
+                    <li><a href="https://www.facebook.com/frederic.cadet"><i class="fa fa-facebook logo-social" aria-hidden="true" ></i><br>Facebook</a></li>
+                    <li><a href="https://fr.linkedin.com/in/frédéric-cadet-93524668"><i class="fa fa-linkedin logo-social" aria-hidden="true"></i><br>LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/fred.cdt/"><i class="fa fa-instagram logo-social" aria-hidden="true"></i><br>Instagram</a></li>
+                  </ul>
+              </div>
 
-          <div class="card">
-              <table>
-                    <tbody>
-                          <tr><h3>My favorite movies</h3></tr>
-                          <tr>
-                            <td><img src="images/godfather.jpeg" alt="the godfather" class="logo-movies"></td>
-                            <td>
-                              <h4>The Godfather 1st part</h4>
-                              <p class="summary">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p></td>
-                          </tr>
-                          <tr>
-                            <td><img src="images/godfather2.jpeg" alt="the godfather 2" class="logo-movies"></td>
-                            <td>
-                              <h4>The Godfather 2nd part</h4>
-                              <p class="summary">The early life and career of Vito Corleone in 1920s New York is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate.</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td><img src="images/starwars_empire.jpeg" alt="star wars" class="logo-movies"></td>
-                            <td>
-                            <h4>Star Wars - The Empire strikes back</h4>
-                            <p class="summary">After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Master Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.</p></td>
-                          </tr>
-                    </tbody>
-              </table>
-          </div>
+              <div class="card" id="favorite-movies">
+                  <table>
+                        <tbody>
+                              <tr><h3>My favorite movies</h3></tr>
+                              <tr>
+                                <td><img src="images/godfather.jpeg" alt="the godfather" class="logo-movies"></td>
+                                <td>
+                                  <h4>The Godfather 1st part</h4>
+                                  <p class="summary">The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.</p></td>
+                              </tr>
+                              <tr>
+                                <td><img src="images/godfather2.jpeg" alt="the godfather 2" class="logo-movies"></td>
+                                <td>
+                                  <h4>The Godfather 2nd part</h4>
+                                  <p class="summary">The early life and career of Vito Corleone in 1920s New York is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td><img src="images/starwars_empire.jpeg" alt="star wars" class="logo-movies"></td>
+                                <td>
+                                <h4>Star Wars - The Empire strikes back</h4>
+                                <p class="summary">After the rebels are overpowered by the Empire on their newly established base, Luke Skywalker begins Jedi training with Master Yoda. His friends accept shelter from a questionable ally as Darth Vader hunts them in a plan to capture Luke.</p></td>
+                              </tr>
+                        </tbody>
+                  </table>
+              </div>
 
-          <div class="card footer">
-            <p>About this page</p>
-            <p>This page has been coded during <a href="https://www.lewagon.com/program">the FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
+              <div class="card footer">
+                <p>About this page</p>
+                <p>This page has been coded during <a href="https://www.lewagon.com/program">the FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
+              </div>
           </div>
       </div>
   </body>
